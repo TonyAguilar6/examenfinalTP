@@ -1,0 +1,1 @@
+web: gunicorn devprogra.wsgi --log-file -

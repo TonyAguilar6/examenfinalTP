@@ -1,0 +1,345 @@
+{%load staticfiles%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dopetrope by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{%static 'assets/css/main.css'%}" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Dopetrope</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li>
+
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li>
+											<a href="#">Phasellus consequat</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>
+									</ul>
+								</li>
+
+							</ul>
+						</nav>
+
+					<!-- Banner -->
+						<section id="banner">
+							<header>
+								<h2>Howdy. This is Dopetrope.</h2>
+								<p>A responsive template by HTML5 UP</p>
+							</header>
+						</section>
+
+					<!-- Intro -->
+						<section id="intro" class="container">
+							<div class="row">
+								<div class="col-4 col-12-medium">
+									<section class="first">
+										<i class="icon solid featured fa-cog"></i>
+										<header>
+											<h2>Ipsum consequat</h2>
+										</header>
+										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="middle">
+										<i class="icon solid featured alt fa-bolt"></i>
+										<header>
+											<h2>Magna etiam dolor</h2>
+										</header>
+										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="last">
+										<i class="icon solid featured alt2 fa-star"></i>
+										<header>
+											<h2>Tempus adipiscing</h2>
+										</header>
+										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+									</section>
+								</div>
+							</div>
+							<footer>
+								<ul class="actions">
+									<li><a href="#" class="button large">Get Started</a></li>
+									<li><a href="#" class="button alt large">Learn More</a></li>
+								</ul>
+							</footer>
+						</section>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Portfolio -->
+									 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+
+							</div>
+							<div class="col-12">
+
+								<!-- Blog -->
+									<section>
+										<header class="major">
+											<h2>Informacion</h2>
+										</header>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section class="box">
+
+												 <h2>Formulario</h2>
+
+												  <form  method="post" class="row g-3">
+													{% csrf_token %}
+												  <div class="col-md-6"  >
+													<label for="inputEmail4" class="form-label">nombre</label>
+													<i class="fas fa-user"></i><input alt=" " name="name" type="text" class="form-control" id="inputEmail4">
+												  </div>
+												  <div class="col-md-6">
+													<label for="inputAddress" class="form-label">apellido</label>
+													<i class="fas fa-user"></i><input name="lastname" type="text" class="form-control" id="inputAddress">
+												  </div>
+												  <div class="col-md-6">
+													<label for="inputAddress2" class="form-label">fecha de nacimiento</label>
+													<i class="far fa-calendar-alt"></i><input name="date_bo" type="date" class="form-control" id="inputAddress2" placeholder="fecha de nacimiento">
+												  </div>
+												  <div class="col-md-6">
+													<label for="inputAddress2" class="form-label">telefono</label>
+													<i class="fas fa-mobile-alt"></i><input name="telefono" type="text" class="form-control" id="inputAddress4" placeholder=" numero de telefono">
+												  </div>
+												  <div class="col-md-6">
+													<label for="inputAddress2" class="form-label">direccion</label>
+													<i class="fas fa-map-marked-alt"></i><input name="direcciono" type="text" class="form-control" id="inputAddress5" placeholder="direccion">
+												  </div>
+												  <br>
+												  <br>
+
+
+												<section class="box">
+													<h2>PC</h2>
+												  <div class="col-md-6"  >
+													<label for="inputEmail4" class="form-label">modelo</label>
+													<i class="fas fa-laptop-code"></i><input alt=" " name="modelo" type="text" class="form-control" id="inputEmail4">
+												  </div>
+												  <div class="col-md-6">
+													<label for="inputAddress" class="form-label">procesador</label>
+													<i class="fas fa-microchip"></i><input name="marca" type="text" class="form-control" id="inputAddress">
+												  </div>
+												  <div class="col-md-6">
+													<label for="inputAddress2" class="form-label">ram</label>
+													<i class="fas fa-memory"></i><input name="ram" type="int" class="form-control" id="inputAddress4" placeholder="GB - DDR4">
+												  </div>
+													  <div class="col-md-6">
+													<label for="inputAddress2" class="form-label">rom</label>
+													<i class="fas fa-hdd"></i><input name="rom" type="int" class="form-control" id="inputAddress4" placeholder="GB - SSD">
+												  </div>
+
+												  <br>
+												  <br>
+												  <div class="col-md-6">
+													  <br>
+													  <br>
+														<br>
+											  </div>
+
+
+
+
+												  <div class="col-md-6">
+													  <br>
+													  <br>
+														<br>
+													<button type="submit" class="button">registrarse <i class="fas fa-check"></i></button>
+
+											  </div>
+											</form>
+																				</section>
+																				<div>
+												<br>
+												<br>
+												<div>
+													<div class="btn-group">
+														<a href="{%url 'webprogra:tablas'%}" class="button alt icon solid">ver Empleados  <i class="fas fa-users"></i></a>
+
+													</div>
+												</div>
+
+											</div>
+											</div>
+
+
+
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>Blandit nisl adipiscing</h2>
+									</header>
+									<ul class="dates">
+										<li>
+											<span class="date">Jan <strong>27</strong></span>
+											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
+											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>23</strong></span>
+											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
+											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>15</strong></span>
+											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
+											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>12</strong></span>
+											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
+											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>10</strong></span>
+											<h3><a href="#">Blandit tempus aliquam?</a></h3>
+											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>What's this all about?</h2>
+									</header>
+									<a href="#" class="image featured"><img src="{%static 'images/pic10.jpg'%}" alt="" /></a>
+									<p>
+										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
+										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
+										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+									</p>
+									<footer>
+										<ul class="actions">
+											<li><a href="#" class="button">Find out more</a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Ipsum et phasellus</h2>
+
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>Vitae tempor lorem</h2>
+									</header>
+									<ul class="social">
+										<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+										<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+										<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<p>
+												Untitled Incorporated<br />
+												1234 Somewhere Road Suite<br />
+												Nashville, TN 00000-0000
+											</p>
+										</li>
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">someone@untitled.tld</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(800) 000-0000</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+
+
+
+
+		<!-- Scripts -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 			<script src="https://kit.fontawesome.com/eaeabee00f.js" crossorigin="anonymous"></script>
+			<script src="{%static 'assets/js/jquery.min.js'%}"></script>
+			<script src="{%static 'assets/js/jquery.dropotron.min.js'%}"></script>
+			<script src="{%static 'assets/js/browser.min.js'%}"></script>
+			<script src="{%static 'assets/js/breakpoints.min.js'%}"></script>
+			<script src="{%static 'assets/js/util.js'%}"></script>
+			<script src="{%static 'assets/js/main.js'%}"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+	</body>
+</html>
